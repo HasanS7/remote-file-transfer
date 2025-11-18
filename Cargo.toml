@@ -1,0 +1,16 @@
+[package]
+name = "file_transfer_tool"
+version = "0.3.0"
+edition = "2024"
+default-run = "receiver"
+
+[[bin]]
+name = "receiver"
+path = "src/receiver.rs"
+
+[[bin]]
+name = "sender"
+path = "src/sender.rs"
+
+[dependencies]
+indicatif = "0.18.3"
